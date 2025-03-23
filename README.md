@@ -40,8 +40,6 @@ git clone https://github.com/arisculala/finderai-chat.git
 cd finderai-chat
 ```
 
-- Run the schema migration (TODO: integration to liquibase)
-
 **2. Configure Environment Variables**
 Create a `.env.local` file in the project root and define the backend API URL and AI provider settings:
 
