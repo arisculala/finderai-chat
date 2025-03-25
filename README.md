@@ -47,9 +47,8 @@ Create a `.env.local` file in the project root and define the backend API URL an
 cp example.env.local .env.local
 
 Update values:
-NEXT_PUBLIC_API_URL=
-NEXT_PUBLIC_PROVIDER=
-NEXT_PUBLIC_MODEL=
+FINDERAI_CHAT_API_URL=http://localhost:8081/api/v1/chat
+FINDERAI_CHAT_RESPONSE_LIMIT=10
 ```
 
 **3. Install Dependencies**
@@ -79,7 +78,7 @@ FinderAI-Chat interacts with FinderAI-Chat-Backend to process user queries.
 ### Chat Flow
 
 1. User enters a message.
-2. Frontend sends the text query to the backend’s `/api/v1/chat/message` endpoint.
+2. Frontend sends the text query to the backend’s `/api/v1/chat/` endpoint.
 3. Backend searches stored embeddings to find similar text matches.
 4. Matching records are returned and displayed in the chat window.
 
